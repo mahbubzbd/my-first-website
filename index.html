@@ -32,6 +32,10 @@
             font-size: 20px;
             background-color: aqua;
         }
+        p::before {
+         counter-increment: section;                 /* Increment the value of section counter by 1 */
+        content: "Section " counter(section) ": ";  /* Display counter value in default style (decimal) */
+}
     </style>
 </head>
 <body>
@@ -45,15 +49,15 @@
         <input name="email" type="text">
         <br>
         <input name="password" type="text">
-        <ul>
-            <li>mahbub</li>
-            <li>shakib</li>
-            <li>sajid</li>
-            <li>tahmid</li>
-            <li>rafi</li>
-            <li>jihad</li>
-            <li>jaber</li>
-        </ul>
+        
+            <p>mahbub</p>
+            <p>shakib</p>
+            <p>sajid</p>
+            <p>tahmid</p>
+            <p>rafi</p>
+            <p>jihad</p>
+            <p>jaber</p>
+        
 
 </body>
 </html>
